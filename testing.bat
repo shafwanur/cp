@@ -14,9 +14,3 @@ set i=0
 
     set /a i=%i%+1
     goto loop
-
-:fail 
-    echo FAILED %i%
-    gen %i%
-    pause
-    goto loop

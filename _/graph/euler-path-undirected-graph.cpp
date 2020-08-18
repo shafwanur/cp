@@ -46,11 +46,3 @@ int main() {
         cout << u << ' ';
     }
 }
-
-/* Euler Path is a path that visits all the edges only once. 
-
-Undirected Graph - 
-
-there can be atmost 2 nodes with odd degree, rest nodes should have even degree. That is why, st is initialized to 1.
-one we visit an edge, we delete both ends of it, thus using a set is convenient
-*/

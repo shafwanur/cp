@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-
-using namespace std;
 using ll = long long;
 
 const ll P = 31;
@@ -52,10 +49,4 @@ ll substrhash(int i, int j) {
   ll hash = (h[j + 1] - h[i] + M) % M;
   hash = (hash * inv(ppow[i])) % M;
   return hash;
-}
-
-int main() {
-  ios_base::sync_with_stdio(false);
-  cin.tie(0);
-  
 }

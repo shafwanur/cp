@@ -6,8 +6,8 @@ using ll = long long;
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(0);
-  int n, m, q;
-  cin >> n >> m >> q;
+  int n, m;
+  cin >> n >> m;
   vector<vector<ll>> dist(n + 1, vector<ll>(n + 1, (ll) 1e18));
   for (int i = 0; i < m; i++) {
     int u, v, c;
@@ -23,16 +23,5 @@ int main() {
         }
       }
     }
-  }
-  while (q--) {
-    int u, v;
-    cin >> u >> v;
-    if (u == v) {
-      dist[u][v] = 0;
-    } 
-    if (dist[u][v] == (ll) 1e18) {
-      dist[u][v] = -1;
-    }
-    cout << dist[u][v] << '\n';
   }
 }

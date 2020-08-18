@@ -8,7 +8,7 @@ set i=0
     code < in > wa-out
     test < in > ac-out
 
-    fc /w /c ac-out wa-out
+    fc /w ac-out wa-out
     if errorlevel 1 goto fail
 
     set /a i=%i%+1

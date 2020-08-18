@@ -9,7 +9,11 @@ string to_string(string s) {
 string to_string(const char* s) {
   return to_string((string) s);
 }
- 
+
+string to_string(const char s) {
+  return to_string(string(1, s));
+}
+
 string to_string(bool b) {
   return (b ? "1" : "0");
 }

@@ -48,14 +48,3 @@ int main() {
     }
     cout << '\n';
 }
-
-/* Euler Path is a path that visits all the edges once. 
-
-Directed Graph - 
-
-one node should have out_degree - in_degree = 1, this will be start node.
-one node should have in_degree - out_degree = 1, this will be end node.
-all other nodes should have in_degree == out_degree.
-if all nodes have similar in and out degrees, start from any node. This is why st is initialized to 0.
-
-*/

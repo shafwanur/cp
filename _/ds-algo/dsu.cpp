@@ -1,5 +1,4 @@
-class dsu {
- public:
+struct dsu {
   vector<int> p;
   vector<int> r;
 
