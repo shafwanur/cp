@@ -10,10 +10,21 @@ int rand(int l, int r) {
   return get(rng);
 }
 
+vector<int> get_array(int n, int l, int r) {
+  vector<int> a(n);
+  for (int i = 0; i < n; i++) {
+    a[i] = rand(l, r);
+  }
+  return a;
+}
+
 void shuffle(vector<int>& a) {
   shuffle(a.begin(), a.end(), rng);
 }
 
 int main() {
-     
+  int n = rand(1, 10);
+  vector<int> a = get_array(n, 1, 100);
+  print(n);
+  print(a);
 }
