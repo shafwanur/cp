@@ -3,12 +3,13 @@
 set i=0
 :loop
     gen > in
-    code < in > out
 
     echo. 
     echo INPUT
     type in
     echo.
+
+    code < in > out
 
     echo OUTPUT
     type out

@@ -47,6 +47,7 @@ string to_string(bitset<N> v) {
   for (size_t i = 0; i < N; i++) {
     res += static_cast<char>('0' + v[i]);
   }
+  reverse(res.begin(), res.end());
   return res;
 }
  

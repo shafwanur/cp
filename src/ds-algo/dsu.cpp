@@ -7,7 +7,7 @@ struct dsu {
     r.resize(n + 1);
     for (int i = 1; i <= n; i++) {
       p[i] = i;
-      r[i] = 0;
+      r[i] = 1;
     }
   }
   
@@ -18,14 +18,14 @@ struct dsu {
     return p[u] = find(p[u]);
   }
 
-  void unite(int u, int v) {
+  bool unite(int u, int v) {
     u = find(u), v = find(v);
     if (u != v) {
-      if (r[u] < r[v]) {
-        swap(u, v);
-      }
+      (r[u] < r[v] ? swap(u, v) : void());
       p[v] = u;
       r[u] += r[v];
+      return true;
     }
+    return false;
   }
 };

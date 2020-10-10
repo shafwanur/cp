@@ -1,9 +1,13 @@
-import heapq
-from heapq import heappop, heappush
-a = []
-heapq.heapify(a)
-heapq.heappush(a, 3)
-heapq.heappush(a, 2)
-heapq.heappush(a, 5)
-heapq.heappush(a, 6)
-print(a)
+import json
+
+class CreatePlaylist:
+    def __init__(self):
+        pass
+
+    def create:
+        rejjjjjjjjjj = json.dumps({
+            "name": "Youtube - Liked Music",
+            "description": "Liked Music From Youtube",
+            "public": False
+        })
+        query = f"https://api.spotify.com/v1/users/{self.user_id}/playlists"

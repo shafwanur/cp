@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "_/templates/printer.h"
+#include "src/snippets/printer.h"
 
 using namespace std;
 
@@ -23,8 +23,11 @@ void shuffle(vector<int>& a) {
 }
 
 int main() {
-  int n = rand(1, 10);
-  vector<int> a = get_array(n, 1, 100);
+  print(1);
+  int n = rand(1, 5);
+  vector<int> a = get_array(n, -10, 10);
+  vector<int> l = get_array(n, 0, 1);
   print(n);
   print(a);
+  print(l);
 }
