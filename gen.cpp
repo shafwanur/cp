@@ -22,12 +22,21 @@ void shuffle(vector<int>& a) {
   shuffle(a.begin(), a.end(), rng);
 }
 
+void print(vector<int>& a) {
+  int n = (int) a.size();
+  for (int i = 0; i < n; i++) {
+    if (i > 0) {
+      cout << ' ';
+    }
+    cout << a[i];
+  }
+  cout << '\n';
+}
+
 int main() {
-  print(1);
-  int n = rand(1, 5);
-  vector<int> a = get_array(n, -10, 10);
-  vector<int> l = get_array(n, 0, 1);
-  print(n);
+  cout << 1 << '\n';
+  int n = rand(1, 15);
+  vector<int> a = get_array(n, 1, n + 1);
+  cout << n << '\n';
   print(a);
-  print(l);
 }
