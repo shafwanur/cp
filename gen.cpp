@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 #include "src/snippets/printer.h"
 
+#define int long long
+
 using namespace std;
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
@@ -33,10 +35,10 @@ void print(vector<int>& a) {
   cout << '\n';
 }
 
-int main() {
+int32_t main() {
   cout << 1 << '\n';
-  int n = rand(1, 15);
-  vector<int> a = get_array(n, 1, n + 1);
+  int n = rand(2, 10);
+  vector<int> a = get_array(n, 1, n);
   cout << n << '\n';
   print(a);
 }

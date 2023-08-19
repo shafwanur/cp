@@ -1,13 +1,13 @@
 /**
- *    author:  shafwanur010
- *    created: -1
+ *    author:  shaf1
+ *    created: DATE
 **/
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 
 using namespace std;
 
 #ifdef LOCAL
-  #include "debug.h"
+  #include "C:\Users\shafw\Documents\cp\debug.h"
 #else
   #define debug(...) 42
 #endif

@@ -1,8 +1,8 @@
-void dijkstra(vector<vector<int>>& g, vector<ll>& dist) {
+void dijkstra(vector<vector<pair<int, int>>>& g, vector<ll>& dist, int root = 1) {
   int n = (int) g.size() - 1;
   vector<bool> visited(n + 1, 0);
 
-  int root = 1;
+  /* root = 1; */
   priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> q;
   q.emplace(0, root);
   dist[root] = 0;
